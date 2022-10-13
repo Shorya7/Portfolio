@@ -267,7 +267,7 @@
 }
 .section-3-container .section-3-column img:hover{
   cursor: pointer;
-  transform: translateY(-0.2%);
+  /* transform: translateY(-0.2%); */
   width: 56vw;
   height: 66vh;
 }

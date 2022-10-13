@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Coda&family=Noto+Sans+Mono&display=swap');
 *{
     margin: 0;
@@ -18,6 +18,7 @@
     box-sizing: border-box;
     position: sticky;
     top: 0;
+    z-index: 1;
   }
   nav .logo{
     color: #fff;
@@ -60,7 +61,7 @@
 .section-1{
   padding: 1vh 0 0 0;
   height: 75vh;
-  background-color: #b8a2e2c9;
+  background-color: #cb97ff;
 }
 .pic{
   height: 60vh;
@@ -91,28 +92,35 @@
 }
 
 .about-me{
-    display: flex;
-    flex-direction: column;
+    padding: 1px;
     font-family: 'Coda', sans-serif;
-    background-image: url("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-040.jpg");
-    background-size: cover; 
-    background-repeat: no-repeat;
-    
+    background: linear-gradient(to bottom, #cc99ff 0%, #ffccff 116%);
 }
 
 .about-me .head{
-    margin: 10vh 30vw 1vh;
+  /* display: flex;
+  justify-content: center; */
+  margin: 12vh 125px 0;
     font-size: 2.2rem;
     color: rgb(72, 9, 131);
 }
 .about-me .content{
-    color: rgb(45, 68, 170);
-    margin: 5vh 20vw 15vh;
-    font-family: 'Noto Sans Mono', monospace !important;
-    max-width: 50%;
+  display: flex;
+    color: rgb(112 28 196);
+    margin: 2vh 2vw 5vh;
+    font-family: 'Libre Baskerville', serif !important;
     font-weight: 600;
     letter-spacing: 1px;
-    line-height: 25px;
+    line-height: 40px;
+}
+.content p{
+  max-width: 50rem;
+  margin: 2rem 6rem;
+}
+.content .avatar img{
+  width:25vw;
+  height: auto;
+  
 }
 
 .ins ul{
@@ -127,7 +135,6 @@
     font-weight: 800;
     cursor: pointer;
     color: rgb(62, 78, 200);
-    text-decoration: underline;
 }
 .ins ul li a{
     text-decoration: none;
@@ -138,7 +145,11 @@
   padding: 2rem;
 }
 .ins ul li a img{
-  width:5vw;
+  width:65px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 
@@ -196,7 +207,7 @@
     align-items: flex-start;
     gap: 40px;
     flex-wrap: wrap;
-    background-color: rgba(219, 152, 235, 0.48);
+    background-color: #f7c4ff;
     padding: 10vh 0;
     font-family: 'Coda', sans-serif;
 }
@@ -207,11 +218,11 @@
   margin: 2vh 35%;
   font-size: 4rem;
   font-weight: 700;
-  color: #792cbadb;
+  color: rgb(72 9 131);
 }
 .section-2-container .section-2-column{
     width: 400px;
-    height: 470px;
+    height: 370px;
     border-radius: 35px; 
     border: 2px solid rgba(127, 65, 65, 0.23);
 }
@@ -221,7 +232,7 @@
     height: auto;
     width: auto;
     margin: 25px ;
-    border-radius: 25px;
+    
 }
 #js{
   margin-left: 90px;
@@ -232,9 +243,11 @@
   margin-left: 2vw;
   margin-right: 1vw;
 }
-.section-2-container .section-2-column h2{
-  margin-left: 2vw;
-  color: rgb(92, 190, 27);
+.section-2-container .section-2-column h1{
+  display: flex;
+  justify-content: center;
+  font-size: 2.6rem;
+  color: #b049cb;
 }
 .section-2-column:hover {
   transform: translateY(-0.1%);
@@ -242,57 +255,58 @@
   box-shadow: 0 2px 20px rgb(0 0 0 / 48%);
   cursor: pointer;
 }
-
+#work{
+  background-color: #f7c4ff;
+}
 .section-3-container{
   display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 40px;
     padding: 10vh 0;
     font-family: 'Coda', sans-serif;
 }
 .section-3-container .section-3-column{
-  width: 70vw;
-    height: 90vh;
+  width: 39vw;
+    height: 75vh;
     border-radius: 35px; 
     border: 2px solid rgba(127, 65, 65, 0.23);
-    background-color: #8d9af3f0;
+    background-color:#cda2f58f ;
 }
 .section-3-container .section-3-column img{
-  height: 65vh;
-  width: 55vw;
-  margin: 6vh 7vw;
+  height: 60vh;
+  width: 35vw;
+  margin: 4vh 2vw 2vh;
   border-radius: 25px;
 }
 .section-3-container .section-3-column img:hover{
   cursor: pointer;
-  /* transform: translateY(-0.2%); */
-  width: 56vw;
-  height: 66vh;
+   transform: translateY(-0.3%);
+   transition: 0.3s;
+   width: 36vw;
+  height: 61vh; 
 }
 .section-3-container .section-3-column h2{
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #09314b;
+  color: rgb(72 9 131);
   font-size: 2.3rem;
 }
 .contact{
-  height: 85vh;
-  background-image: url("https://img.freepik.com/free-vector/white-gold-hexagon-pattern-background_53876-115292.jpg?w=2000");
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 70vh;
+  background: linear-gradient(to bottom, #f7c4ff 0%, #cc99ff 70%);
   font-family: 'Coda', sans-serif;
-  background-color: rgb(190 186 186 / 30%);
 }
  .hd h1{
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
-  font-size: 3rem;
+  font-size: 3.8rem;
   font-family: 'Coda', sans-serif;
+  color: rgb(72 9 131);
 }
 footer{
   font-family: 'Coda', sans-serif;
@@ -325,6 +339,17 @@ footer{
   .section-3-container .section-3-column h2{
     font-size: 1.4rem;
   }
+  .ins ul li a img{
+    width:45px;
+  }
+}
+@media(max-width:575px){
+  .content p{
+    font-size: 0.9rem;
+  }
+  .content .avatar img{
+       width: 15vw;
+  }
 }
 @media(max-width:628px){
   .section-2-container .skills{
@@ -332,6 +357,10 @@ footer{
   }
   .about-me .head{
     font-size: 1.9rem;
+  }
+  .about-me .content{
+    line-height: 20px;
+    margin-right: 0;
   }
 }
 @media(max-width:522px){
@@ -354,10 +383,19 @@ footer{
   .about-me .head{
     font-size: 1.5rem;
   }
+  .contact .hd h1{
+    font-size: 3rem;
+  }
+  .content .avatar img{
+    margin-left: 0;
+  }
 }
 @media(max-width:450px){
   .contact{
     height:125vh;
+  }
+  .content .avatar img{
+    display: none;
   }
 }
 @media(max-width:422px){
@@ -384,6 +422,9 @@ footer{
 }
 #js{
   margin-left: 6vw;
+}
+.hd h1{
+  font-size: 1.9rem;
 }
 }
 @media(max-width:385px){

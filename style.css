@@ -286,10 +286,6 @@
 }
 .section-3-container .section-3-column img:hover{
   cursor: pointer;
-   transform: translateY(-0.3%);
-   transition: 0.3s;
-   width: 36vw;
-  height: 61vh; 
 }
 .section-3-container .section-3-column h2{
   display: flex;

@@ -455,7 +455,10 @@ footer{
     font-size: 1.5rem;
   }
   .about{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+  }
+  .about-me .head{
+    font-size: 1.8rem;
   }
   .section-2-container .section-2-column{
     width: 270px;
@@ -493,8 +496,15 @@ footer{
     font-size: 2rem;
   }
 }
-
-/* .fill{
-  width: 17rem;
+@media(max-width:470px){
+.fill{
+  width: 13rem;
   height: 18.5rem;
-} */
+}
+#long{
+  width: 9.2rem;
+}
+.fcol1 button{
+  width: 130%;
+}
+}

@@ -127,11 +127,43 @@
                     </li>
                 </ul>
             </div>
+            <div class="fcontainer">
+                <form name="myForm" class="fill">
+                    <div class="fcol1">
+                    <p>Name</p>
+                    <input type="text" placeholder="Enter your full name" name="fname" required >
+                    </div>
+                    <div class="fcol1">
+                    <p>Email ID</p>
+                    <input type="text" placeholder="Enter your email" name="fname" required>
+                    </div>
+                    <div class="fcol1">
+                    <textarea id="long" name="msg" placeholder="Leave message" name="fname" required></textarea>
+                    <div class="fcol1">
+                        <button type="submit">Send Message</button>
+                    </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
         <footer>
             Made with ❤️ by Shorya
         </footer>
+        <!-- <script>
+            document.querySelector("button").addEventListener("click",handleClick);
+            function handleClick(){
+                let x= document.forms["myForm"]["fname"].value;
+                
+                if(x==null){
+                    alert("Fill the details before submitting");
+                }
+                else{
+                alert("Thank you for visiting");
+                document.querySelector("button").innerHTML="Sent";
+                }
+            }
+        </script> -->
 </body>
 
 </html>
